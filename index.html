@@ -1,11 +1,17 @@
 <html><head><title>Sensor1</title></head>
 <body>
  <script>
-  if(src="https://api.thingspeak.com/update?api_key=VXCEWEVQJ3D71HJ9&field1=0" > 20){
-  document.write("Its too much");
+  if(src="https://api.thingspeak.com/update?api_key=VXCEWEVQJ3D71HJ9&field1=30" > 20){
+  document.write("Sensor 1 temperature value is above 20 degrees celcius");
   }
   else {
-  document.write("Its just low");
+  document.write("");
+  }
+  if(src="https://api.thingspeak.com/update?api_key=VXCEWEVQJ3D71HJ9&field2=90" > 80){
+  document.write("Sensor 1 humidity value is above 80%");
+  }
+  else {
+  document.write("");
   }
    </script>
 </body></html>
