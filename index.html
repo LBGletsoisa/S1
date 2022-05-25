@@ -1,11 +1,10 @@
 <html><head><title>Sensor1</title></head>
 <body>
  <script>
-  int x= src"https://api.thingspeak.com/channels/1737929/fields/1.json?results=1";
-  if(x > 20){
+  if( src"https://api.thingspeak.com/channels/1737929/fields/1.json?results=1" > 20){
   document.write("Sensor 1 temperature value is above 20 degrees celcius");
   }
-  else if (x < 20) {
+  else if ( src"https://api.thingspeak.com/channels/1737929/fields/1.json?results=1" < 20) {
   document.write("Sensor 1 temperature value is below 20 degrees celcius");
   }
    </script>
